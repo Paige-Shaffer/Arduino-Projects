@@ -1,0 +1,17 @@
+const int switchPin = 2;
+const int motorpin = 9;
+int switchstate = 0;
+
+void setup () {
+	pinMode(motorPin, OUTPUT);
+	pinMode(switchPin, INPUT);
+}
+voidloop() {
+	switchState = digitalRead(switchPin);
+	if (switchState == HIGH) {
+	digitalWrite(motorPin, HIGH);
+}
+else {
+	digitalWrite(motorPin, LOW);
+	}
+}
